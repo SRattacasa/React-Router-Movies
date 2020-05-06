@@ -31,13 +31,11 @@ const App = () => {
     <Router>
       <div>
         <SavedList list={savedList} />
-        <Route path="/">
-          <MovieList movies={movieList} />
-          <div>Replace this Div with your Routes</div>
-        </Route>
         <Route path="/movies/:id">
-          <Movie movies={movieList} />
-          <div>Replace this Div with your Routes</div>
+          <Movie  />
+        </Route>
+        <Route path="/">
+            <MovieList movies={movieList} />
         </Route>
       </div>
     </Router>
